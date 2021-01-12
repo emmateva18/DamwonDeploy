@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+</head>
+<body>
+    <header>
+        
+        <div class="nav">
+                <ul class="main">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="game/Damwon.exe" download>Download Our Game</a></li>
+                    <li><a href="About Us.html">About Us</a></li>
+                    <li><a href="Contact Us.html">Contact</a></li>
+                 </ul>
+    </div>
+    </header>
+    <div id="title" class="title">
+        <h1>WELCOME TO OUR SITE</h1>
+    </div>
+
+    <div class="button">
+        <button type="button" class="btn btn-outline-light" onclick="myFunction()">Learn more about the game</button>
+
+        <div id="cont">
+            <div class="row bg-light" id="text" style="display: none;">
+              
+                <div class="col-12" id="info">
+                    <br>
+                    <p class="text-justify">The Germans place a combination of 4 random numbers in the range
+                      between 0 and 7, indicating the coordinates of their battleships. The code breaker should guess the number within 13 tries using the board. 
+                      The codebreaker places their guesses. The Germans should give a feedback whether just a number is guessed or a number and a correct place.
+                      If just a number is guessed, it should be given as in Figure 1, “Guessed numbers”. If the code breaker guesses a number on the correct position,
+                      then the information should be displayed as in Figure 1, “Guessed numbers and positions”.
+                      <br>
+                      <br>
+                      <img src="Images/figure1.png" class="figure1" >
+                    </p>
+                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("text");
+          var y=document.getElementById("title");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.display="none";
+          } else {
+            x.style.display = "none";
+            y.style.display="block";
+          }
+        }
+        </script>
+</body>
+</html>
